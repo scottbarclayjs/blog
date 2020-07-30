@@ -1,4 +1,5 @@
 @import 'resets';
+@import 'queries';
 
 .coming-soon {
 	height: 100vh;
@@ -18,6 +19,7 @@
 				flex-direction: column;
 				justify-content: space-between;
 				z-index: 1;
+				position: relative;
 				&.moveUp {
 					transform: translateY(-100vh);
 					transition: all 1s;
@@ -95,7 +97,6 @@
 				background-color: #24262b;
 				height: 100vh;
 				width: 100%;
-				padding: 50%;
 				padding: 5rem;
 				display: flex;
 				flex-direction: column;

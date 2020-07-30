@@ -1,5 +1,5 @@
 const comingSoonBG = document.querySelectorAll('.bgImage');
-console.log(comingSoonBG[0]);
+const body = document.querySelector('body');
 let current = 0;
 
 bgTransition();
@@ -27,6 +27,20 @@ getInTouch.addEventListener('click', () => {
 	leftScreen2.classList.remove('moveDown');
 	leftScreen1.classList.add('moveUp');
 	leftScreen2.classList.add('moveUp');
+});
+
+back.addEventListener('click', () => {
+	leftScreen1.classList.remove('moveUp');
+	leftScreen2.classList.remove('moveUp');
+	leftScreen1.classList.add('moveDown');
+	leftScreen2.classList.add('moveDown');
+});
+
+getInTouch.addEventListener('click', () => {
+	leftScreen1.classList.remove('moveRight');
+	leftScreen2.classList.remove('moveRight');
+	leftScreen1.classList.add('moveLeft');
+	leftScreen2.classList.add('moveLeft');
 });
 
 back.addEventListener('click', () => {

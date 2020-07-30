@@ -1,0 +1,98 @@
+@media (max-width: 1025px) {
+	html {
+		overflow-y: auto;
+	}
+	section.coming-soon {
+		div.coming-soon-content {
+			flex-direction: column;
+			.content-left,
+			.content-right {
+				width: 100vw;
+			}
+			.content-left {
+				.left-screen1 {
+					background-image: linear-gradient(
+							rgba(0, 0, 0, 0.61),
+							rgba(0, 0, 0, 0.61)
+						),
+						url(/assets/comingSoonBG-min0.jpg);
+					background-size: cover;
+					background-position: center;
+					color: #fff;
+					nav {
+						a {
+							color: #fff;
+						}
+					}
+					h1 {
+						color: #fff;
+					}
+					button {
+						color: #222;
+						border-color: #fff;
+						div.background {
+							width: 100%;
+							background-color: #fff;
+							clip-path: polygon(0 0, 90% 0, 80% 101%, 0 101%);
+						}
+					}
+					.footer-links {
+						a i {
+							color: #fff;
+						}
+					}
+					.countdown {
+						position: absolute;
+						bottom: 5%;
+						right: 5%;
+						text-align: right;
+						color: #fff;
+						line-height: 1.2;
+						h2 {
+							font-size: 3rem;
+						}
+						h3 {
+							font-size: 1rem;
+						}
+					}
+				}
+				.left-screen2 {
+					background-color: #fff;
+					.back {
+						color: #222;
+						border-color: #222;
+					}
+				}
+			}
+		}
+	}
+	.countdown:nth-of-type(2) {
+		display: none;
+	}
+}
+
+@media (max-width: 415px) {
+	section.coming-soon {
+		.coming-soon-content {
+			.content-left {
+				.left-screen1 {
+					padding: 2rem;
+					nav {
+						h3 {
+							font-size: 1.5rem;
+						}
+					}
+					h1 {
+						font-size: 3rem;
+					}
+					p {
+						font-size: 1.25rem;
+					}
+				}
+				.left-screen2 {
+					padding: 2rem;
+				}
+			}
+		}
+	}
+}
