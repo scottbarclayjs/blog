@@ -72,6 +72,12 @@
 }
 
 @media (max-width: 415px) {
+	html {
+		overflow: hidden;
+	}
+	body {
+		overflow: hidden;
+	}
 	section.coming-soon {
 		.coming-soon-content {
 			.content-left {
