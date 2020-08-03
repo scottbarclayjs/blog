@@ -1,6 +1,6 @@
 @media (max-width: 1025px) {
 	html {
-		overflow-y: hidden;
+		overflow: hidden;
 	}
 	section.coming-soon {
 		div.coming-soon-content {
@@ -90,8 +90,9 @@
 					}
 				}
 				.left-screen2 {
-					padding: 2rem;
+					padding: 2rem 1rem;
 					.form {
+						width: 85vw;
 						.form-header {
 							margin: 4rem 0 1rem 0;
 							h1 {
@@ -125,6 +126,9 @@
 						}
 					}
 				}
+			}
+			.content-right {
+				display: none;
 			}
 		}
 	}
