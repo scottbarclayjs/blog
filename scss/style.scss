@@ -120,7 +120,6 @@
 				padding: 5rem;
 				display: flex;
 				flex-direction: column;
-				justify-content: space-between;
 				z-index: 1;
 				position: relative;
 				&.moveUp {
@@ -140,6 +139,77 @@
 					align-self: flex-start;
 					&:hover {
 						cursor: pointer;
+					}
+				}
+				.form {
+					position: absolute;
+					top: 50%;
+					left: 50%;
+					transform: translate(-50%, -50%);
+					.form-header {
+						text-align: center;
+						color: #fff;
+						margin-bottom: 5rem;
+						h1 {
+							font-size: 3rem;
+							font-weight: 300;
+						}
+						p {
+							font-size: 1.2rem;
+						}
+					}
+					.form-body {
+						display: flex;
+						flex-direction: column;
+						color: #fff;
+						label {
+							margin-bottom: 0.5rem;
+						}
+						input {
+							margin-bottom: 1.5rem;
+							padding: 0.5rem;
+						}
+						textarea {
+							padding: 0.5rem;
+							margin-bottom: 1rem;
+						}
+						input:focus,
+						textarea:focus {
+							outline: transparent;
+						}
+						button {
+							width: 12rem;
+							padding: 0.5rem;
+							font-size: 1.2rem;
+							background-color: transparent;
+							border: 2px solid #fff;
+							color: #fff;
+							position: relative;
+							div.background {
+								position: absolute;
+								top: 0;
+								right: 0;
+								width: 0;
+								height: 100%;
+								background-color: #fff;
+								z-index: -1;
+							}
+							&:hover {
+								cursor: pointer;
+								color: #222;
+								transition: all 0.5s;
+								div.background {
+									width: 100%;
+									clip-path: polygon(
+										100% 0,
+										100% 101%,
+										15% 101%,
+										5% 0
+									);
+									transition: all 0.5s;
+								}
+							}
+						}
 					}
 				}
 			}
