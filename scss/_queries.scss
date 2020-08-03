@@ -1,6 +1,6 @@
 @media (max-width: 1025px) {
 	html {
-		overflow-y: auto;
+		overflow-y: hidden;
 	}
 	section.coming-soon {
 		div.coming-soon-content {
@@ -12,8 +12,8 @@
 			.content-left {
 				.left-screen1 {
 					background-image: linear-gradient(
-							rgba(0, 0, 0, 0.61),
-							rgba(0, 0, 0, 0.61)
+							rgba(0, 0, 0, 0.6),
+							rgba(0, 0, 0, 0.8)
 						),
 						url(/assets/comingSoonBG-min0.jpg);
 					background-size: cover;
@@ -57,10 +57,10 @@
 					}
 				}
 				.left-screen2 {
-					background-color: #fff;
+					background-color: #222;
 					.back {
-						color: #222;
-						border-color: #222;
+						color: #fff;
+						border-color: #fff;
 					}
 				}
 			}
@@ -91,6 +91,39 @@
 				}
 				.left-screen2 {
 					padding: 2rem;
+					.form {
+						.form-header {
+							margin: 4rem 0 1rem 0;
+							h1 {
+								font-size: 1.5rem;
+							}
+							p {
+								font-size: 1rem;
+							}
+						}
+						.form-body {
+							label {
+								margin-bottom: 0.25rem;
+							}
+							input {
+								margin-bottom: 1rem;
+							}
+							button {
+								color: #222;
+								font-size: 1rem;
+								width: 10rem;
+								div.background {
+									width: 100%;
+									clip-path: polygon(
+										100% 0,
+										100% 101%,
+										15% 101%,
+										5% 0
+									);
+								}
+							}
+						}
+					}
 				}
 			}
 		}
